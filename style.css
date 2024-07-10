@@ -1,0 +1,129 @@
+/* Resetando as margens e paddings de todos os elementos, 
+   definindo box-sizing como border-box para incluir bordas e paddings no tamanho total dos elementos
+   e definindo a fonte padrão */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Definindo a altura da raiz HTML para ocupar toda a altura da tela e 
+   ajustando o tamanho da fonte base para 14px */
+html {
+    height: 100vh;
+    font-size: 14px;
+}
+
+/* Definindo a cor de fundo do corpo do documento e garantindo que ele ocupe 100% da altura */
+body {
+    background-color: #1E1E2A;
+    height: 100%;
+}
+
+/* Estilizando a classe .container para centralizar seu conteúdo,
+   limitando sua largura máxima e aplicando padding */
+.container {
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Removendo a decoração de links e definindo a cor do texto */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Criando um gradiente de fundo para elementos com a classe .degrade
+   e adicionando uma sombra */
+.degrade {
+    background: linear-gradient(to right, #b123c4, #410049);
+    box-shadow: 6px 6px 22px 2px #000000;
+}
+
+/* Centralizando o conteúdo do cabeçalho e adicionando um espaçamento na parte inferior */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilizando a imagem dentro do cabeçalho, ajustando sua largura máxima, 
+   adicionando um espaçamento inferior e uma sombra */
+header img {
+    max-width: 120px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 22px 2px #080009;
+}
+
+/* Estilizando o título do cabeçalho, ajustando o tamanho da fonte, 
+   a cor do texto e a espessura da fonte */
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #a5a5a5;
+    font-weight: 300;
+}
+
+/* Definindo a exibição flexível para a seção .botoes-links, 
+   organizando os itens em uma coluna e adicionando espaçamento entre eles */
+section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilizando botões dentro de links, ajustando largura, padding,
+   alinhamento dos itens e adicionando transição para animação */
+a.link button {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s;
+}
+
+/* Ajustando o tamanho da fonte dos ícones dentro de links */
+a.link i {
+    font-size: 1.5em;
+}
+
+/* Adicionando um efeito de escala nos botões ao passar o mouse */
+a.link button:hover, footer a.btn-footer:hover {
+    transform: scale(1.03);
+}
+
+/* Centralizando o conteúdo do rodapé e adicionando margens */
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+/* Estilizando botões do rodapé, ajustando dimensões, fonte, bordas,
+   margens e adicionando transição para animação */
+footer a.btn-footer {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 45%;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+/* Ajustando a posição do parágrafo dentro do rodapé */
+footer p {
+    transform: translate(0, 250%);
+}
